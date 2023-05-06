@@ -17,6 +17,7 @@ function App() {
     { id: 1, texto: "HTML" },
     { id: 2, texto: "CSS" },
     { id: 3, texto: "React" },
+    { id: 4, texto:"JSX" },
   ];
 
   return (
