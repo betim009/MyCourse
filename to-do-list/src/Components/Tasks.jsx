@@ -9,7 +9,7 @@ function Tasks(props) {
 
   return (
     <div>
-      <ul>{listaDeTarefas}</ul>
+      <ul data-testid="lista-1">{listaDeTarefas}</ul>
     </div>
   );
 };

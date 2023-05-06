@@ -25,7 +25,7 @@ function TasksApi() {
 
     return (
         <div>
-            <ul>
+            <ul data-testid="lista-2">
                 {tasks.map((task) => (
                     <li key={task.id}>{task.title}</li>
                 ))}
