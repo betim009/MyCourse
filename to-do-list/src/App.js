@@ -1,15 +1,7 @@
 import React from 'react';
 import './App.css';
-
-// Component Lista de Tarefas
-function ListaDeTarefas(props) {
-  const tasks = props.tasks;
-  const listaDeTarefas = tasks.map((task) => (
-    <li key={task.id}>{task.texto}</li>
-  ));
-  return <ul>{listaDeTarefas}</ul>;
-}
-
+import Tasks from './Components/Tasks';
+import TasksApi from './Components/TasksApi';
 
 function App() {
   // Array de tasks
@@ -22,8 +14,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Tasks de programação</h1>
-      <ListaDeTarefas tasks={tasks} />
+      <h2>Tasks de programação</h2>
+      <Tasks tasks={tasks} />
+
+      <h2>Api</h2>
+      <TasksApi />
     </div>
   );
 }
